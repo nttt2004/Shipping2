@@ -44,7 +44,7 @@ jobs:
       - name: Test with pytest and generate coverage report
         continue-on-error: true
         run: |
-          pytest --cov=produce_classifier --cov-report=xml
+          pytest --cov=shipping --cov-report=xml
 
       # Bước 5: Chạy SonarCloud Scanner để phân tích và đẩy kết quả lên
       - name: SonarCloud Scan
