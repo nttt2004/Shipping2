@@ -1,5 +1,5 @@
 import unittest
-from shipping_fee import calculate_shipping_fee  # đảm bảo file gốc là shipping_fee.py
+from shipping import calculate_shipping_fee  # đảm bảo file gốc là shipping_fee.py
 
 class TestShippingFeeC2(unittest.TestCase):
     def test_case_1(self):
