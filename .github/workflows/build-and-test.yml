@@ -53,4 +53,4 @@ jobs:
           # GITHUB_TOKEN là một secret đặc biệt, tự động có sẵn trong GitHub Actions
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # SONAR_TOKEN là secret bạn đã tạo và lưu vào repository
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN2 }}
