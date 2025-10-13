@@ -41,10 +41,14 @@ jobs:
           pip install pytest pytest-cov
 
       # Bước 4: Chạy test và tạo báo cáo độ phủ dưới dạng XML
+      # - name: Test with pytest and generate coverage report
+      #   continue-on-error: true
+      #   run: |
+      #     pytest --cov=shipping --cov-report=xml
       - name: Test with pytest and generate coverage report
         continue-on-error: true
         run: |
-          pytest --cov=shipping --cov-report=xml
+          pytest tests/test_shipping_fee_c1.py --cov=shipping --cov-report=xml:coverage_c1.xml
 
       # Bước 5: Chạy SonarCloud Scanner để phân tích và đẩy kết quả lên
       - name: SonarCloud Scan
