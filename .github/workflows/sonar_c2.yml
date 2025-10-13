@@ -31,7 +31,7 @@ jobs:
       - name: Run pytest for C2 with branch coverage
         continue-on-error: true
         run: |
-          pytest test_shipping_fee_c2.py --cov=shipping_fee --cov-report=xml:coverage_c2.xml --cov-branch -v
+          pytest test_shipping_fee_c2.py --cov=shipping --cov-report=xml:coverage_c2.xml --cov-branch -v
 
       - name: SonarCloud Scan (C2)
         uses: SonarSource/sonarcloud-github-action@ffc3010689be73b8e5ae0c57ce35968afd7909e8
