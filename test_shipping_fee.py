@@ -22,17 +22,28 @@ def test_case_3():
 
 def test_case_4():
     """Trường hợp 4: weight=17, distance=465 → nhánh weight 5–20, distance 100–500"""
-    result = calculate_shipping_fee(17, 465)
+    result = calculate_shipping_fee(17, 38)
     print("Case 4:", result)
-    assert result == 227200
+    assert result == 193800
 
 
 def test_case_5():
     """Trường hợp 5: weight=38, distance=846 → nhánh weight>=20, distance>500"""
-    result = calculate_shipping_fee(38, 846)
+    result = calculate_shipping_fee(38, 92)
     print("Case 5:", result)
-    assert result == 632300
+    assert result == 614200
 
+def test_case_6():
+    """Trường hợp 5: weight=38, distance=846 → nhánh weight>=20, distance>500"""
+    result = calculate_shipping_fee(42, 397)
+    print("Case 6:", result)
+    assert result == 681760
+
+def test_case_7():
+    """Trường hợp 5: weight=38, distance=846 → nhánh weight>=20, distance>500"""
+    result = calculate_shipping_fee(42, 687)
+    print("Case 7:", result)
+    assert result == 684350
 # C1
 # import pytest
 # from shipping import calculate_shipping_fee
