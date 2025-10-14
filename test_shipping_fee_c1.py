@@ -1,3 +1,4 @@
+#C2
 # from shipping import calculate_shipping_fee
 
 # def test_case_1():
@@ -32,8 +33,8 @@
 #     print("Case 5:", result)
 #     assert result == 632300
 
+# C1
 import pytest
-# Import hàm cần test
 from shipping import calculate_shipping_fee
 
 # Danh sách test case: (id, weight, distance, expected_output)

@@ -17,18 +17,18 @@ def calculate_shipping_fee(weight, distance):
 
     base_fee = 20000
 
-    if 0 <= weight < 5:
+    if weight < 5:
         # Lỗi 3: hệ số sai (đúng là 5000, viết thành 10000)
         weight_fee = weight * 10000
-    elif 5 <= weight < 20:
+    elif weight < 20:
         weight_fee = weight * 10000
     else: 
         weight_fee = weight * 15000
     
     # Lỗi 4: điều kiện sai (đúng là <100, viết thành <=100)
-    if 0 <= distance <= 100:
+    if distance <= 100:
         distance_fee = distance * 100
-    elif 100 <= distance < 500:
+    elif distance < 500:
         distance_fee = distance * 80
     else:  
         distance_fee = distance * 50
