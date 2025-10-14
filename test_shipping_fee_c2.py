@@ -1,5 +1,5 @@
 import unittest
-from shipping import calculate_shipping_fee  # đảm bảo file gốc là shipping_fee.py
+from shipping import calculate_shipping_fee  
 
 class TestShippingFeeC2(unittest.TestCase):
     def test_case_1(self):
@@ -11,10 +11,10 @@ class TestShippingFeeC2(unittest.TestCase):
         expected = 20000 + 630000 + 100000
         self.assertEqual(result, expected)
 
-    # def test_case_3(self):
-    #     result = calculate_shipping_fee(3, 72)
-    #     expected = 20000 + 15000 + 7200
-    #     self.assertEqual(result, expected)
+    def test_case_3(self):
+        result = calculate_shipping_fee(3, 72)
+        expected = 20000 + 15000 + 7200
+        self.assertEqual(result, expected)
 
     def test_case_4(self):
         result = calculate_shipping_fee(17, 465)
@@ -26,10 +26,10 @@ class TestShippingFeeC2(unittest.TestCase):
         expected = 20000 + 180000 + 8400
         self.assertEqual(result, expected)
 
-    # def test_case_6(self):
-    #     result = calculate_shipping_fee(39, 92)
-    #     expected = 20000 + 585000 + 9200
-    #     self.assertEqual(result, expected)
+    def test_case_6(self):
+        result = calculate_shipping_fee(39, 92)
+        expected = 20000 + 585000 + 9200
+        self.assertEqual(result, expected)
 
     def test_case_7(self):
         result = calculate_shipping_fee(42, 687)
